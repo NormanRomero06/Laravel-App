@@ -11,4 +11,5 @@ class curso extends Model
 
     //protected $table = "users";
     //Mejor utilizar convension 100pre
+    //TINKER
 }
