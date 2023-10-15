@@ -20,24 +20,8 @@ class DatabaseSeeder extends Seeder
                 //     'email' => 'test@example.com',
         // ]);
 
-        $curso = new Curso();
-        $curso->name =  "Laravel";
-        $curso->descripton = "Online";
-        $curso->categoria = "Virtual";
-        $curso->save();
-
-
-        $curso1 = new Curso();
-        $curso1->name =  "Java";
-        $curso1->descripton = "POO";
-        $curso1->categoria = "Virtual";
-        $curso1->save();
-
-
-        $curso3 = new Curso();
-        $curso3->name =  "Kotlin";
-        $curso3->descripton = "Interfaz";
-        $curso3->categoria = "Bimodal";
-        $curso3->save();
+        $this->call(CursoSeeder::class);
+  //php artisan migrate:fresh --seed 
+  //Hace que limpie y gestione el seed con los nuevos datos
     }
 }
